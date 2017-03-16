@@ -7,6 +7,8 @@ The [cairo](cairo) directory contains the initial version and shouldn't be used 
 
 
 ### Compiling
+
+现在只支持64位，32位需要调整
 Support for [libpng](http://www.libpng.org/pub/png/libpng.html) will be automatically enabled if needed library is found (this has nothing to do with libpng support in example code).
 
 You can choose from 3 different libraries to calculate the hash:
