@@ -26,8 +26,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
-#include <math.h>
 #include <stdint.h>
+#include <math.h>
 #include <stdbool.h>
 
 // Hash functions

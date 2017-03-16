@@ -108,7 +108,8 @@ $(TARGET): $(OBJS)
 
 example: $(OBJS) example.o
 	@echo "  LD    $@"
-	@$(CC) -lm $(shell pkg-config --libs $(DEPS) 2>/dev/null) $^ -o $@
+#	@$(CC) -lm $(shell pkg-config --libs $(DEPS) 2>/dev/null) $^ -o $@
+	@$(CC)  $(shell pkg-config --libs $(DEPS) 2>/dev/null)  $^ -lm -o $@
 
 install: $(TARGET) $(HEADER) $(PC_FILE)
 	@echo "Installing $(TARGET)"
